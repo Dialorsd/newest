@@ -26,7 +26,7 @@ class PizzaController extends Controller
     
 
     $pizza = Pizza::findorFail($id);
-    // use the $id variable to query the db for a record
+
     return view('pizzas.show', ['pizza' => $pizza]);
   }
 
@@ -35,9 +35,6 @@ class PizzaController extends Controller
   }
   public function store()
   {
-    // error_log(request('name'));
-    // error_log(request('type'));
-    // error_log(request('base'));
 
     $pizza = new Pizza();
 

@@ -13,7 +13,7 @@
         @foreach($pizzas as $pizza)
           <div>
             {{ $pizza['name'] }} - {{ $pizza['type'] }} - {{ $pizza['base'] }}
-            <a href="pizzas/{{$pizza['id']}}">click to redirect</a>
+            <a href="pizzas/{{$pizza['id']}}"> -> click to redirect</a>
           </div>
         @endforeach
 
