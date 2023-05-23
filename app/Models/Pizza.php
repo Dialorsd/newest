@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Pizza extends Model
 {
-  // protected $table = 'table_name';
+  protected $fillable = ['name', 'type', 'base', 'toppings'];
   protected $casts=[ 
     'toppings' => 'array'
   ];
